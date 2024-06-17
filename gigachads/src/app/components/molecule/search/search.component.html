@@ -1,0 +1,14 @@
+<div class="search">
+  <app-input (dataEvent)="receiveDataFromChild($event)" class="search__input" input_placeholder="Введите название или его начало"></app-input>
+  
+  <app-search-btn (click)="search()" class="search__btn"></app-search-btn>
+
+  <select id="select" [(ngModel)]="filter" class="search-sel">
+    <option value="name">name</option>
+    <option value="alcoholic">alcoholic</option>
+    <option value="ingredient">ingredient</option>
+    <option value="category">category</option>
+    <option value="glass">glass</option>
+  </select>
+</div>
+

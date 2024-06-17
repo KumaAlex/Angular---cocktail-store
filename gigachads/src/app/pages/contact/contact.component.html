@@ -1,0 +1,28 @@
+<div class="contact">
+    <div class="title">Contact us</div>
+    <form action="" method="" class="form">
+        <div class="input-group">
+            <input type="text" name="first_name" id="first-name" placeholder="First name" [(ngModel)]="name">
+            <label for="first-name">First name</label>
+        </div>
+        
+        <div class="input-group">
+            <input type="text" name="last_name" id="last-name" placeholder="Last Name" [(ngModel)]="surname">
+            <label for="last-name">Last name</label>
+        </div>
+
+        <div class="input-group">
+            <input type="email" name="e-mail" id="e-mail" placeholder="e-mail" [(ngModel)]="email">
+            <label for="e-mail">e-mail</label>
+        </div>
+
+        <div class="textarea-group">
+            <textarea name="message" id="message" rows="5" placeholder="Message" [(ngModel)]="message"></textarea>
+            <label for="message">Message</label>
+        </div>
+
+        <div class="button-div">
+            <button type="submit" (click)="send()">Send</button>
+        </div>
+    </form>
+</div>

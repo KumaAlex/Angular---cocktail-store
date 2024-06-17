@@ -1,0 +1,31 @@
+.search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  background: none;
+  padding: 0 10px 0 10px;
+
+  font-family: fantasy;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 100px;
+}
+
+.search-sel {
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #333;
+  color: #000000;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  appearance: none;
+}
+
+.search-sel {
+  background: linear-gradient(to right, #7300be, #b74bff);
+}

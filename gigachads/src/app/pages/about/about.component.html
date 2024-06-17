@@ -1,0 +1,18 @@
+<div class="about">
+    <h1 class="about__top">
+        More information about drinks:
+    </h1>
+    <div class="about__content" *ngFor="let i of data">
+        <div class="about__content-block">
+            <h2 class="about__content-topic">
+                {{ i.drink }}
+            </h2>
+            <h5 class="about__content-type">
+                {{ i.type }}
+            </h5>
+            <div class="about__content-text">
+                {{ i.text }}
+            </div>
+        </div>
+    </div>
+</div>

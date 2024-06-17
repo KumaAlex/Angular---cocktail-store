@@ -1,0 +1,15 @@
+.btn {
+  width: 38px;
+  height: 40.8px;
+  border: 1px solid black;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  background-size: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/search_icon.png");
+
+  color: white;
+  cursor: pointer;
+}
+

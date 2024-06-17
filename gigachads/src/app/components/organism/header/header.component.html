@@ -1,0 +1,48 @@
+<div class="header">
+  <div class="header__left-logo">
+    <img class="header-logo" routerLink="/main" src="../../../../assets/img/logo.png">
+  </div>
+
+  <div class="header__left-btn" routerLink="/catalogue">
+    <app-btn class="header-btn" >
+      <span btn class="header-btn">Catalogue</span>
+    </app-btn>
+  </div>
+
+  <div class="header__left-btn" routerLink="/about">
+    <app-btn class="header-btn">
+      <span btn class="header-btn">About</span>
+    </app-btn>
+  </div>
+
+  <div class="header__left-btn header__left-end" routerLink="/contact">
+    <app-btn class="header-btn">
+      <span btn class="header-btn">Contact</span>
+    </app-btn>
+  </div>
+
+  <div class="search-bar-container">
+    <app-search class="header__search-bar"></app-search>
+  </div>
+
+  <div class="header__right-btn" *ngIf="isAuth">
+    <div class="header__right-btn max-btn left-bor">
+      <app-btn class="header-btn" routerLink="/profile">
+        <span btn class="header-btn">Profile</span>
+      </app-btn>
+    </div>
+
+    <div class="header__right-btn max-btn left-bor">
+      <app-btn class="header-btn" (click)="unauth()">
+        <span btn class="header-btn">Logout</span>
+      </app-btn>
+    </div>
+  </div>
+
+  <div class="header__right-btn left-bor" *ngIf="!isAuth">
+    <app-btn class="header-btn">
+      <span btn class="header-btn" routerLink="login">Login</span>
+    </app-btn>
+  </div>
+
+</div>

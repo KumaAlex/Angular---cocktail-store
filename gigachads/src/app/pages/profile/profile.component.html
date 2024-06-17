@@ -1,0 +1,53 @@
+<div class="profile">
+  <div class="profile__top">
+    <div class="profile__top-backgr">
+      <div class="profile__top-backgr__btns">
+        <button class="profile__top-backgr__btn">Change cover photo</button>
+        <button class="profile__top-backgr__btn">Change profile photo</button>
+      </div>
+    </div>
+    <div class="profile__top-info">
+      <div class="profile__top-user"></div>
+      <div class="profile__top-name">
+        <span class="profile__top-name__item1" *ngIf="curUser">{{ curUser.login }}</span>
+        <span class="profile__top-name__item2" *ngIf="curUser">Money: {{ curUser.balance }}$</span>
+      </div>
+      <div class="profile__top-btns">
+        <button class="profile__top-btn1 profile__top-btn">Basket</button>
+        <button class="profile__top-btn">Edit profile</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="profile__content">
+    <div class="profile__content-left">
+      <div class="profile__content-left__block">
+        <div class="profile__content__block-name">Interesting</div>
+        <div class="profile__content__block-info">
+          <button class="profile__content__block-btn">
+            Promotions and Discounts
+          </button>
+          <button class="profile__content__block-btn">Popular drinks</button>
+          <button class="profile__content__block-btn">Reviews</button>
+        </div>
+      </div>
+      <div class="profile__content-left__block">
+        <div class="profile__content__block-name">Number of purchases: {{ number_of_purchases }}</div>
+      </div>
+    </div>
+    <div class="profile__content-right">
+      <div class="profile__content-right__block">
+        <div class="profile__content-right__top">
+          <span>Basket</span>
+          <span class="profile__content__block-btns">
+            <button class="profile__content-right-btn" (click)="buyOrder()">Buy</button>
+            <button class="profile__content-right-btn" (click)="clearOrder()">Clear basket</button>
+          </span>
+        </div>
+        <div class="profive__content-right__mid">
+            <app-basket></app-basket>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

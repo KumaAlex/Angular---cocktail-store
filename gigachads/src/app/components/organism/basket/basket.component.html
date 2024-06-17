@@ -1,0 +1,14 @@
+<div class="basket">
+  <h1 *ngIf="!orderedProducts.length" class="basket-top">HOLY GUACAMOLE NAH</h1>
+  <div class="basket__card" *ngFor="let order of orderedProducts">
+    <div class="basket__card-item">
+      <div>
+        <p class="basket__card-info">{{order.drink.strDrink}}</p>
+        <p class="basket__card-info">amount: {{order.amount}}</p>
+        <p class="basket__card-info">total price: {{(order.amount*order.retail_price).toFixed(2)}}</p>
+      </div>
+
+      <app-btn><span (click)="removeOrder(order)" class="basket__card-rmbtn" btn>remove</span></app-btn>
+    </div>
+  </div>
+</div>

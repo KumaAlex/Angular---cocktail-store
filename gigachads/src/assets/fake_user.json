@@ -1,0 +1,16 @@
+{
+    "users": [
+        {
+            "login": "Alex",
+            "password": "Alex",
+            "basket": [],
+            "balance": 30000
+        },
+        {
+            "login": "Alex",
+            "password": "Alex",
+            "basket": [],
+            "balance": 30000
+        }
+    ]
+}

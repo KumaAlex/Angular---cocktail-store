@@ -1,0 +1,24 @@
+<div class="main">
+  <h1 class="main__top">Welcome!</h1>
+  <div class="main__content" *ngIf="videoUrl">
+    <video class="main__content-video"
+    src="/assets/mp4/main_intro.mp4"
+    autoplay
+    muted
+  ></video>
+  </div>
+
+  <h2>The most popular:</h2>
+  <div class="main__content2">
+    <div class="main__content2-card"  *ngFor="let drink of drinks">
+        <img class="main__content2-img" [src]="drink.strDrinkThumb" />
+        <div class="main__content2-info">
+            <p> {{ drink.strDrink }} </p>
+            <p> {{ drink.strDrinkAlternate }} </p>
+            <p> {{ drink.strCategory }} </p>
+            <p> {{ drink.strAlcoholic }} </p>
+            <p> {{ drink.strGlass }} </p>
+        </div>
+    </div>
+  </div>
+</div>

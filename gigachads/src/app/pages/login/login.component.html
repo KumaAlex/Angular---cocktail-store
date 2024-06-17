@@ -1,0 +1,33 @@
+<div class="box">
+  <h2 id="top">Login</h2>
+  <form id="form">
+    <div class="inputBox">
+      <label for="userName">Username</label>
+      <input
+        [(ngModel)]="username"
+        type="text"
+        name="username"
+        placeholder="Enter your username"
+      />
+    </div>
+    <div class="inputBox">
+      <label for="userPassword">Password</label>
+      <input
+        [(ngModel)]="password"
+        type="password"
+        name="password"
+        placeholder="Enter your password"
+      />
+    </div>
+    <div class="box__btns">
+      <app-btn class="submit">
+        <span btn class="submit-btn" (click)="login()">Login</span>
+      </app-btn>
+      <app-btn class="submit">
+        <span btn class="submit-btn" routerLink="/register"
+          >Create new account?</span
+        >
+      </app-btn>
+    </div>
+  </form>
+</div>

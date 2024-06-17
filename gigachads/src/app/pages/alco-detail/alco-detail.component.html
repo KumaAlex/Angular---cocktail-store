@@ -1,0 +1,24 @@
+<div class="detail" *ngIf="curDrink">
+  <h1>{{curDrink.strDrink}}</h1>
+  <div class="detail__content">
+    <img [src]="curDrink.strDrinkThumb" alt="" class="detil-img">
+    <div class="detail__info">
+      <h2>Detailed:</h2>
+      <p class="detail__info-item">{{curDrink.idDrink}}</p>
+      <p class="detail__info-item">{{curDrink.strDrinkAlternate}}</p>
+      <p class="detail__info-item">{{curDrink.strTags}}</p>
+      <p class="detail__info-item">{{curDrink.strCategory}}</p>
+      <p class="detail__info-item">{{curDrink.strIBA}}</p>
+      <p class="detail__info-item">{{curDrink.strAlcoholic}}</p>
+      <p class="detail__info-item">{{curDrink.strGlass}}</p>
+    </div>
+    <div class="detail__info">
+      <h2>Instructions:</h2>
+      <p class="detail__info-item">{{curDrink.strInstructions}}</p>
+      <p class="detail__info-item">{{curDrink.strInstructionsES}}</p>
+      <p class="detail__info-item">{{curDrink.strInstructionsDE}}</p>
+      <p class="detail__info-item">{{curDrink.strInstructionsFR}}</p>
+      <p class="detail__info-item">{{curDrink.strInstructionsIT}}</p>
+    </div>
+  </div>
+</div>

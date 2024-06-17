@@ -1,0 +1,29 @@
+<div class="card">
+  <div class="card__left">
+    <img class="card__left-img" [src]="drink.strDrinkThumb" alt="">
+  </div>
+  <div class="card__info">
+    <div class="card__info-item">
+      {{drink.strDrink}}
+    </div>
+    <div class="card__info-item">
+      {{drink.strCategory}}
+    </div>
+    <div class="card__info-item">
+      {{drink.strAlcoholic}}
+    </div>
+    <div class="card__info-item">
+      {{drink.strGlass}}
+    </div>
+    <div class="card__info-item">
+      {{((drink.idDrink % 10) * 100 + drink.idDrink * 100) / 1000}}
+    </div>
+  </div>
+  <div class="card__buy">
+    <app-btn class="card__buy-btn" [routerLink]="['/catalogue/alco_detail', drink.idDrink]">
+      <span btn class="card-btn">read more</span>
+    </app-btn>
+    <input class="card__buy-amount" [(ngModel)]="amount" type="number" min="1" max="20"/>
+    <app-btn class="card__buy-btn" (click)="buyDrink()"><span btn class="card-btn">Buy</span></app-btn>
+  </div>
+</div>

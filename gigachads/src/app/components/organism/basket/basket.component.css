@@ -1,0 +1,33 @@
+.basket {
+  margin: 100px;
+}
+
+.basket-top {
+  max-width: min-content;
+}
+
+.basket__card {
+  display: flex;
+  flex-direction: column;
+}
+
+.basket__card-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid white;
+  border-radius: 6px;
+  padding: 4px;
+  margin: 10px;
+  max-width: 400px;
+}
+
+.basket__card-rmbtn {
+  background-color: white;
+  max-width: max-content;
+  padding: 2px;
+}
+
+.basket__card-info {
+  margin: 0;
+}
